@@ -1,0 +1,23 @@
+LINKS BETWEEN CONTIGS
+---------------------
+
+START----> 01
+15----> 238262 OR 12
+14----> 238262 OR 12
+08----> 09 OR 13
+01----> 03 OR 02
+13----> 238262 OR 12
+03----> 04 OR 05
+05----> 08 OR 07
+238262----> END_REVERSE
+10----> 11 OR 14
+06----> 08 OR 07
+09----> 15 OR 10
+02----> 04 OR 05
+12----> 238262 OR 12
+04----> REPETITIVE REGION----> 06
+11----> 238262 OR 12
+07----> 09 OR 13
+
+
+------Assembled contigs can not be circularized, some sequence is probably missing!------n

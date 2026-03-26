@@ -1,0 +1,4 @@
+NC_039377.1	Caulerpa lentillifera Cp
+NC_038217.1	Caulerpa lentillifera MT
+NC_032042.1	Caulerpa racemosa Cp
+NC_037367.1	Caulerpa manorensis Cp

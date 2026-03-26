@@ -1,0 +1,44 @@
+LINKS BETWEEN CONTIGS
+---------------------
+
+22----> 25 OR 26 OR 24
+12----> 312871
+17----> 20 OR 16
+14----> 312871
+15----> 20 OR 16
+24----> 30 OR 27 OR 2160 OR 28
+23----> 25 OR 26 OR 24
+20----> REPETITIVE REGION----> 21
+27----> 32 OR 31
+08----> 10 OR 11
+05----> 07 OR 06
+19----> REPETITIVE REGION----> 23
+01----> 03 OR 02
+30----> 32 OR 31
+29----> 32 OR 31
+04----> 07 OR 06
+18----> REPETITIVE REGION----> 22
+09----> 10 OR 11
+16----> 18 OR 19
+06----> 08 OR 09
+02----> 04 OR 05
+25----> 30 OR 27 OR 2160 OR 28
+03----> 04 OR 05
+07----> 08 OR 09
+21----> 04 OR 05
+26----> 30 OR 2160 OR 27 OR 28
+START----> 01
+31----> 34 OR 33
+10----> 13
+13----> 312871
+32----> 34 OR 33
+28----> 32 OR 31
+11----> 13
+
+(Contigs broken up by long homopolymer stretches are linked together as one contig with 15 N's, they can be merged manually in some cases)
+
+(If the region before and after the N zone overlaps, you can merge them by deleting the regions next to N zone from both sides (those are the least reliable))
+
+
+
+------Assembled contigs can not be circularized, some sequence is probably missing!------n

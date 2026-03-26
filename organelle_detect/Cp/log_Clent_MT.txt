@@ -1,0 +1,50 @@
+
+
+-----------------------------------------------
+NOVOPlasty: The Organelle Assembler
+Version 4.3.5
+Author: Nicolas Dierckxsens, (c) 2015-2024
+-----------------------------------------------
+
+
+Input parameters from the configuration file:   *** Verify if everything is correct ***
+
+Project:
+----------------------
+Project name          = Clent_MT
+Type                  = mito_plant
+Genome range          = 180000-210000
+K-mer                 = 33
+Max memory            = 
+Extended log          = 0
+Save assembled reads  = no
+Seed Input            = MT.fa
+Extend seed directly  = no
+Reference sequence    = KXX761577.fa
+Variance detection    = 
+Chloroplast sequence  = NC_039377.fa
+
+Dataset 1:
+----------------------
+Read Length           = 151
+Insert size           = 300
+Platform              = illumina
+Single/Paired         = PE
+Combined reads        = 
+Forward reads         = /bigdata/stajichlab/shared/projects/Caulerpa/gDNA/caulerpa_lentillifera/V300077649_L4_ALGsakRAAAA-613_1.fq.gz
+Reverse reads         = /bigdata/stajichlab/shared/projects/Caulerpa/gDNA/caulerpa_lentillifera/V300077649_L4_ALGsakRAAAA-613_2.fq.gz
+Store Hash            = 
+
+Heteroplasmy:
+-----------------------
+MAF                   = 
+HP exclude list       = 
+PCR-free              = 
+
+Optional:
+----------------------
+Insert size auto      = yes
+Use Quality Scores    = yes
+Reduce ambigious N's  = 
+Output path           = 
+
