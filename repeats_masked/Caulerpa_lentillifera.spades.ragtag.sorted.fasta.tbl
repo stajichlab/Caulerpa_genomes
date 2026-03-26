@@ -1,0 +1,59 @@
+==================================================
+file name: Caulerpa_lentillifera.spades.ragtag.sorted.fasta
+sequences:        656166
+total length:  221851055 bp  (221561732 bp excl N/X-runs)
+GC level:         45.48 %
+bases masked:   12581670 bp ( 5.67 %)
+==================================================
+               number of      length   percentage
+               elements*    occupied  of sequence
+--------------------------------------------------
+Retroelements         5367      1304225 bp    0.59 %
+   SINEs:              755        83607 bp    0.04 %
+   Penelope            395       125884 bp    0.06 %
+   LINEs:             2898       688117 bp    0.31 %
+    CRE/SLACS           14         2409 bp    0.00 %
+     L2/CR1/Rex        954       235494 bp    0.11 %
+     R1/LOA/Jockey     107        31386 bp    0.01 %
+     R2/R4/NeSL          1           61 bp    0.00 %
+     RTE/Bov-B         648       150294 bp    0.07 %
+     L1/CIN4           143        24138 bp    0.01 %
+   LTR elements:      1714       532501 bp    0.24 %
+     BEL/Pao            87         9706 bp    0.00 %
+     Ty1/Copia         344        96018 bp    0.04 %
+     Gypsy/DIRS1      1255       422107 bp    0.19 %
+       Retroviral        0            0 bp    0.00 %
+
+DNA transposons       1287       331995 bp    0.15 %
+   hobo-Activator      117        16261 bp    0.01 %
+   Tc1-IS630-Pogo      264        62049 bp    0.03 %
+   En-Spm                0            0 bp    0.00 %
+   MuDR-IS905            0            0 bp    0.00 %
+   PiggyBac              2           86 bp    0.00 %
+   Tourist/Harbinger    88        18407 bp    0.01 %
+   Other (Mirage,       69        15483 bp    0.01 %
+    P-element, Transib)
+
+Rolling-circles        500        69230 bp    0.03 %
+
+Unclassified:        40235      8542253 bp    3.85 %
+
+Total interspersed repeats:    10178473 bp    4.59 %
+
+
+Small RNA:            1721       301566 bp    0.14 %
+
+Satellites:            224        42051 bp    0.02 %
+Simple repeats:      36090      1807380 bp    0.81 %
+Low complexity:       4219       217645 bp    0.10 %
+==================================================
+
+* most repeats fragmented by insertions or deletions
+  have been counted as one element
+                                                      
+
+RepeatMasker version 4.1.1 , default mode
+                                        
+run with rmblastn version 2.9.0+
+The query was compared to classified sequences in ".../CLENT.repeatmodeler-library_plusRepBase.fasta"
+
