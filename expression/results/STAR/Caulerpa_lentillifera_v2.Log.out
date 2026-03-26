@@ -1,0 +1,994 @@
+STAR version=2.7.9a
+STAR compilation time,server,dir=2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+##### Command Line:
+STAR --outSAMtype BAM SortedByCoordinate --outReadsUnmapped Fastx --quantMode GeneCounts --twopassMode Basic --runThreadN 32 --outFilterType BySJout --outFilterMultimapNmax 20 --alignSJoverhangMin 8 --alignSJDBoverhangMin 1 --outFilterMismatchNmax 999 --outFilterMismatchNoverReadLmax 0.08 --alignIntronMin 20 --alignIntronMax 10000 --alignMatesGapMax 10000 --genomeDir data/STAR --outFileNamePrefix results/STAR/Caulerpa_lentillifera_v2. --readFilesIn data/CLENT_R1.fastq.gz data/CLENT_R2.fastq.gz --readFilesCommand zcat
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 results/STAR/Caulerpa_lentillifera_v2.
+###### All USER parameters from Command Line:
+outSAMtype                    BAM   SortedByCoordinate        ~RE-DEFINED
+outReadsUnmapped              Fastx     ~RE-DEFINED
+quantMode                     GeneCounts        ~RE-DEFINED
+twopassMode                   Basic     ~RE-DEFINED
+runThreadN                    32     ~RE-DEFINED
+outFilterType                 BySJout     ~RE-DEFINED
+outFilterMultimapNmax         20     ~RE-DEFINED
+alignSJoverhangMin            8     ~RE-DEFINED
+alignSJDBoverhangMin          1     ~RE-DEFINED
+outFilterMismatchNmax         999     ~RE-DEFINED
+outFilterMismatchNoverReadLmax0.08     ~RE-DEFINED
+alignIntronMin                20     ~RE-DEFINED
+alignIntronMax                10000     ~RE-DEFINED
+alignMatesGapMax              10000     ~RE-DEFINED
+genomeDir                     data/STAR     ~RE-DEFINED
+outFileNamePrefix             results/STAR/Caulerpa_lentillifera_v2.     ~RE-DEFINED
+readFilesIn                   data/CLENT_R1.fastq.gz   data/CLENT_R2.fastq.gz        ~RE-DEFINED
+readFilesCommand              zcat        ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runThreadN                        32
+genomeDir                         data/STAR
+readFilesIn                       data/CLENT_R1.fastq.gz   data/CLENT_R2.fastq.gz   
+readFilesCommand                  zcat   
+outFileNamePrefix                 results/STAR/Caulerpa_lentillifera_v2.
+outReadsUnmapped                  Fastx
+outSAMtype                        BAM   SortedByCoordinate   
+outFilterType                     BySJout
+outFilterMultimapNmax             20
+outFilterMismatchNmax             999
+outFilterMismatchNoverReadLmax    0.08
+alignIntronMin                    20
+alignIntronMax                    10000
+alignMatesGapMax                  10000
+alignSJoverhangMin                8
+alignSJDBoverhangMin              1
+quantMode                         GeneCounts   
+twopassMode                       Basic
+
+-------------------------------
+##### Final effective command line:
+STAR   --runThreadN 32   --genomeDir data/STAR   --readFilesIn data/CLENT_R1.fastq.gz   data/CLENT_R2.fastq.gz      --readFilesCommand zcat      --outFileNamePrefix results/STAR/Caulerpa_lentillifera_v2.   --outReadsUnmapped Fastx   --outSAMtype BAM   SortedByCoordinate      --outFilterType BySJout   --outFilterMultimapNmax 20   --outFilterMismatchNmax 999   --outFilterMismatchNoverReadLmax 0.08   --alignIntronMin 20   --alignIntronMax 10000   --alignMatesGapMax 10000   --alignSJoverhangMin 8   --alignSJDBoverhangMin 1   --quantMode GeneCounts      --twopassMode Basic
+----------------------------------------
+
+Number of fastq files for each mate = 1
+
+   Input read files for mate 1 :
+-rwxrw-r-- 1 cassande stajichlab 7833872569 Apr 12  2021 data/CLENT_R1.fastq.gz
+
+   readsCommandsFile:
+exec > "results/STAR/Caulerpa_lentillifera_v2._STARtmp/tmp.fifo.read1"
+echo FILE 0
+zcat      "data/CLENT_R1.fastq.gz"
+
+
+   Input read files for mate 2 :
+-rwxrw-r-- 1 cassande stajichlab 7843522735 Apr 12  2021 data/CLENT_R2.fastq.gz
+
+   readsCommandsFile:
+exec > "results/STAR/Caulerpa_lentillifera_v2._STARtmp/tmp.fifo.read2"
+echo FILE 0
+zcat      "data/CLENT_R2.fastq.gz"
+
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+WARNING: --limitBAMsortRAM=0, will use genome size as RAM limit for BAM sorting
+Finished loading and checking parameters
+Reading genome generation parameters:
+### STAR   --runMode genomeGenerate      --runThreadN 32   --genomeDir data/STAR   --genomeFastaFiles /bigdata/stajichlab/shared/projects/Caulerpa/annotation/filtered_annotate/v2/v2/Caulerpa_lentillifera_v2.scaffolds.fa      --genomeChrBinNbits 16   --sjdbGTFfile Caulerpa_lentillifera_v2.gtf
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              /bigdata/stajichlab/shared/projects/Caulerpa/annotation/filtered_annotate/v2/v2/Caulerpa_lentillifera_v2.scaffolds.fa        ~RE-DEFINED
+genomeSAindexNbases           14     ~RE-DEFINED
+genomeChrBinNbits             16     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  100     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   Caulerpa_lentillifera_v2.gtf     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               44040192   221509880        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 313
+1	scaffold_3	1219164	0
+2	scaffold_6	1018012	1245184
+3	scaffold_9	964409	2293760
+4	scaffold_12	908870	3276800
+5	scaffold_15	836776	4194304
+6	scaffold_18	776190	5046272
+7	scaffold_21	741875	5832704
+8	scaffold_24	531369	6619136
+9	scaffold_27	398240	7208960
+10	scaffold_30	218415	7667712
+11	scaffold_33	157350	7929856
+12	scaffold_36	52839	8126464
+13	scaffold_39	40942	8192000
+14	scaffold_42	25928	8257536
+15	scaffold_45	22207	8323072
+16	scaffold_48	19658	8388608
+17	scaffold_51	19025	8454144
+18	scaffold_54	18071	8519680
+19	scaffold_57	17321	8585216
+20	scaffold_60	16563	8650752
+21	scaffold_63	15942	8716288
+22	scaffold_66	15082	8781824
+23	scaffold_69	13261	8847360
+24	scaffold_72	12829	8912896
+25	scaffold_75	11770	8978432
+26	scaffold_78	11513	9043968
+27	scaffold_81	11145	9109504
+28	scaffold_84	10990	9175040
+29	scaffold_87	10242	9240576
+30	scaffold_90	10042	9306112
+31	scaffold_93	9750	9371648
+32	scaffold_96	9419	9437184
+33	scaffold_99	9241	9502720
+34	scaffold_102	9072	9568256
+35	scaffold_105	8867	9633792
+36	scaffold_108	8781	9699328
+37	scaffold_111	8605	9764864
+38	scaffold_114	8530	9830400
+39	scaffold_117	8246	9895936
+40	scaffold_120	8203	9961472
+41	scaffold_123	7990	10027008
+42	scaffold_126	7896	10092544
+43	scaffold_129	7807	10158080
+44	scaffold_132	7653	10223616
+45	scaffold_135	7416	10289152
+46	scaffold_138	7355	10354688
+47	scaffold_141	7263	10420224
+48	scaffold_144	7215	10485760
+49	scaffold_147	7125	10551296
+50	scaffold_150	7104	10616832
+51	scaffold_153	7070	10682368
+52	scaffold_156	7055	10747904
+53	scaffold_159	7040	10813440
+54	scaffold_162	6907	10878976
+55	scaffold_165	6860	10944512
+56	scaffold_168	6807	11010048
+57	scaffold_171	6760	11075584
+58	scaffold_174	6735	11141120
+59	scaffold_177	6683	11206656
+60	scaffold_180	6592	11272192
+61	scaffold_183	6497	11337728
+62	scaffold_186	6467	11403264
+63	scaffold_189	6419	11468800
+64	scaffold_192	6403	11534336
+65	scaffold_195	6290	11599872
+66	scaffold_198	6256	11665408
+67	scaffold_201	6210	11730944
+68	scaffold_204	6146	11796480
+69	scaffold_207	6067	11862016
+70	scaffold_210	6011	11927552
+71	scaffold_213	5989	11993088
+72	scaffold_216	5954	12058624
+73	scaffold_219	5925	12124160
+74	scaffold_222	5881	12189696
+75	scaffold_225	5828	12255232
+76	scaffold_227	5795	12320768
+77	scaffold_231	5763	12386304
+78	scaffold_234	5732	12451840
+79	scaffold_237	5716	12517376
+80	scaffold_240	5699	12582912
+81	scaffold_242	5694	12648448
+82	scaffold_246	5686	12713984
+83	scaffold_249	5618	12779520
+84	scaffold_252	5588	12845056
+85	scaffold_254	5571	12910592
+86	scaffold_258	5523	12976128
+87	scaffold_261	5463	13041664
+88	scaffold_264	5452	13107200
+89	scaffold_267	5417	13172736
+90	scaffold_270	5408	13238272
+91	scaffold_273	5380	13303808
+92	scaffold_276	5354	13369344
+93	scaffold_279	5334	13434880
+94	scaffold_282	5295	13500416
+95	scaffold_285	5279	13565952
+96	scaffold_288	5272	13631488
+97	scaffold_291	5247	13697024
+98	scaffold_294	5182	13762560
+99	scaffold_297	5147	13828096
+100	scaffold_300	5103	13893632
+101	scaffold_303	5078	13959168
+102	scaffold_306	5046	14024704
+103	scaffold_308	5029	14090240
+104	scaffold_312	5012	14155776
+105	scaffold_2	1226772	14221312
+106	scaffold_5	1071786	15466496
+107	scaffold_8	1004842	16580608
+108	scaffold_11	919882	17629184
+109	scaffold_14	842874	18612224
+110	scaffold_17	781307	19464192
+111	scaffold_20	761420	20250624
+112	scaffold_23	673110	21037056
+113	scaffold_26	487976	21757952
+114	scaffold_29	226641	22282240
+115	scaffold_32	215348	22544384
+116	scaffold_35	87420	22806528
+117	scaffold_38	42957	22937600
+118	scaffold_41	27862	23003136
+119	scaffold_44	23088	23068672
+120	scaffold_47	20268	23134208
+121	scaffold_50	19136	23199744
+122	scaffold_53	18443	23265280
+123	scaffold_56	17495	23330816
+124	scaffold_59	16566	23396352
+125	scaffold_62	15950	23461888
+126	scaffold_65	15156	23527424
+127	scaffold_68	14243	23592960
+128	scaffold_71	12830	23658496
+129	scaffold_74	12198	23724032
+130	scaffold_77	11529	23789568
+131	scaffold_80	11176	23855104
+132	scaffold_83	11004	23920640
+133	scaffold_86	10350	23986176
+134	scaffold_89	10052	24051712
+135	scaffold_92	9776	24117248
+136	scaffold_95	9598	24182784
+137	scaffold_98	9294	24248320
+138	scaffold_101	9181	24313856
+139	scaffold_104	8890	24379392
+140	scaffold_107	8797	24444928
+141	scaffold_110	8622	24510464
+142	scaffold_113	8562	24576000
+143	scaffold_116	8293	24641536
+144	scaffold_119	8216	24707072
+145	scaffold_122	8073	24772608
+146	scaffold_125	7945	24838144
+147	scaffold_128	7827	24903680
+148	scaffold_131	7663	24969216
+149	scaffold_134	7419	25034752
+150	scaffold_137	7372	25100288
+151	scaffold_140	7280	25165824
+152	scaffold_143	7231	25231360
+153	scaffold_146	7126	25296896
+154	scaffold_149	7109	25362432
+155	scaffold_152	7073	25427968
+156	scaffold_155	7057	25493504
+157	scaffold_157	7047	25559040
+158	scaffold_161	6911	25624576
+159	scaffold_164	6869	25690112
+160	scaffold_167	6819	25755648
+161	scaffold_170	6761	25821184
+162	scaffold_173	6741	25886720
+163	scaffold_176	6715	25952256
+164	scaffold_179	6598	26017792
+165	scaffold_182	6506	26083328
+166	scaffold_185	6486	26148864
+167	scaffold_188	6424	26214400
+168	scaffold_190	6408	26279936
+169	scaffold_194	6314	26345472
+170	scaffold_197	6270	26411008
+171	scaffold_200	6221	26476544
+172	scaffold_203	6153	26542080
+173	scaffold_206	6069	26607616
+174	scaffold_209	6012	26673152
+175	scaffold_212	5992	26738688
+176	scaffold_215	5962	26804224
+177	scaffold_218	5934	26869760
+178	scaffold_221	5903	26935296
+179	scaffold_224	5849	27000832
+180	scaffold_228	5795	27066368
+181	scaffold_230	5765	27131904
+182	scaffold_233	5747	27197440
+183	scaffold_235	5723	27262976
+184	scaffold_239	5704	27328512
+185	scaffold_243	5694	27394048
+186	scaffold_245	5688	27459584
+187	scaffold_248	5669	27525120
+188	scaffold_251	5591	27590656
+189	scaffold_255	5571	27656192
+190	scaffold_257	5530	27721728
+191	scaffold_260	5489	27787264
+192	scaffold_262	5459	27852800
+193	scaffold_266	5444	27918336
+194	scaffold_269	5413	27983872
+195	scaffold_272	5389	28049408
+196	scaffold_275	5358	28114944
+197	scaffold_278	5344	28180480
+198	scaffold_281	5310	28246016
+199	scaffold_284	5287	28311552
+200	scaffold_287	5274	28377088
+201	scaffold_290	5266	28442624
+202	scaffold_293	5191	28508160
+203	scaffold_296	5161	28573696
+204	scaffold_299	5113	28639232
+205	scaffold_302	5092	28704768
+206	scaffold_305	5063	28770304
+207	scaffold_309	5029	28835840
+208	scaffold_311	5013	28901376
+209	scaffold_1	1241889	28966912
+210	scaffold_4	1185518	30212096
+211	scaffold_7	1008430	31457280
+212	scaffold_10	929825	32505856
+213	scaffold_13	846503	33488896
+214	scaffold_16	787917	34340864
+215	scaffold_19	768841	35192832
+216	scaffold_22	718166	35979264
+217	scaffold_25	515108	36700160
+218	scaffold_28	280607	37224448
+219	scaffold_31	217915	37552128
+220	scaffold_34	105200	37814272
+221	scaffold_37	46779	37945344
+222	scaffold_40	40097	38010880
+223	scaffold_43	24563	38076416
+224	scaffold_46	20885	38141952
+225	scaffold_49	19141	38207488
+226	scaffold_52	18978	38273024
+227	scaffold_55	17864	38338560
+228	scaffold_58	16618	38404096
+229	scaffold_61	16305	38469632
+230	scaffold_64	15408	38535168
+231	scaffold_67	14863	38600704
+232	scaffold_70	13057	38666240
+233	scaffold_73	12783	38731776
+234	scaffold_76	11586	38797312
+235	scaffold_79	11179	38862848
+236	scaffold_82	11093	38928384
+237	scaffold_85	10495	38993920
+238	scaffold_88	10204	39059456
+239	scaffold_91	9790	39124992
+240	scaffold_94	9640	39190528
+241	scaffold_97	9409	39256064
+242	scaffold_100	9187	39321600
+243	scaffold_103	8932	39387136
+244	scaffold_106	8857	39452672
+245	scaffold_109	8769	39518208
+246	scaffold_112	8564	39583744
+247	scaffold_115	8438	39649280
+248	scaffold_118	8231	39714816
+249	scaffold_121	8100	39780352
+250	scaffold_124	7973	39845888
+251	scaffold_127	7852	39911424
+252	scaffold_130	7806	39976960
+253	scaffold_133	7476	40042496
+254	scaffold_136	7396	40108032
+255	scaffold_139	7327	40173568
+256	scaffold_142	7251	40239104
+257	scaffold_145	7178	40304640
+258	scaffold_148	7120	40370176
+259	scaffold_151	7092	40435712
+260	scaffold_154	7061	40501248
+261	scaffold_158	7047	40566784
+262	scaffold_160	6953	40632320
+263	scaffold_163	6899	40697856
+264	scaffold_166	6824	40763392
+265	scaffold_169	6802	40828928
+266	scaffold_172	6752	40894464
+267	scaffold_175	6723	40960000
+268	scaffold_178	6671	41025536
+269	scaffold_181	6545	41091072
+270	scaffold_184	6493	41156608
+271	scaffold_187	6452	41222144
+272	scaffold_191	6408	41287680
+273	scaffold_193	6381	41353216
+274	scaffold_196	6273	41418752
+275	scaffold_199	6230	41484288
+276	scaffold_202	6195	41549824
+277	scaffold_205	6134	41615360
+278	scaffold_208	6036	41680896
+279	scaffold_211	5993	41746432
+280	scaffold_214	5967	41811968
+281	scaffold_217	5945	41877504
+282	scaffold_220	5922	41943040
+283	scaffold_223	5880	42008576
+284	scaffold_226	5809	42074112
+285	scaffold_229	5791	42139648
+286	scaffold_232	5754	42205184
+287	scaffold_236	5723	42270720
+288	scaffold_238	5711	42336256
+289	scaffold_241	5697	42401792
+290	scaffold_244	5690	42467328
+291	scaffold_247	5680	42532864
+292	scaffold_250	5610	42598400
+293	scaffold_253	5573	42663936
+294	scaffold_256	5555	42729472
+295	scaffold_259	5503	42795008
+296	scaffold_263	5459	42860544
+297	scaffold_265	5450	42926080
+298	scaffold_268	5416	42991616
+299	scaffold_271	5406	43057152
+300	scaffold_274	5365	43122688
+301	scaffold_277	5345	43188224
+302	scaffold_280	5311	43253760
+303	scaffold_283	5289	43319296
+304	scaffold_286	5277	43384832
+305	scaffold_289	5268	43450368
+306	scaffold_292	5216	43515904
+307	scaffold_295	5173	43581440
+308	scaffold_298	5116	43646976
+309	scaffold_301	5094	43712512
+310	scaffold_304	5073	43778048
+311	scaffold_307	5033	43843584
+312	scaffold_310	5018	43909120
+313	scaffold_313	5005	43974656
+--sjdbOverhang = 100 taken from the generated genome
+Started loading the genome: Thu Jan 20 15:39:15 2022
+
+Genome: size given as a parameter = 44040192
+SA: size given as a parameter = 221509880
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=14  nSAi=357913940
+nGenome=44040192;  nSAbyte=221509880
+GstrandBit=32   SA number of indices=53699364
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 44040192 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 44040192 bytes
+SA file size: 221509880 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 221509880 bytes
+Loading SAindex ... done: 1565873619 bytes
+Finished loading the genome: Thu Jan 20 15:39:18 2022
+
+To accommodate alignIntronMax=10000 redefined winBinNbits=11
+To accommodate alignIntronMax=10000 and alignMatesGapMax=10000, redefined winFlankNbins=5 and winAnchorDistNbins=10
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread0 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread0 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread1 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread1 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread2 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread2 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread3 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread3 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread4 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread4 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread5 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread5 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread6 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread6 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread7 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread7 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread8 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread8 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread9 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread9 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread10 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread10 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread11 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread11 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread12 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread12 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread13 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread13 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread14 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread14 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread15 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread15 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread16 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread16 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread17 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread17 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread18 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread18 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread19 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread19 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread20 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread20 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread21 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread21 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread22 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread22 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread23 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread23 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread24 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread24 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread25 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread25 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread26 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread26 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread27 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread27 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread28 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread28 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread29 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread29 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread30 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread30 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread31 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread31 ... ok
+Created thread # 1
+Created thread # 2
+Created thread # 3
+Created thread # 4
+Created thread # 5
+Starting to map file # 0
+mate 1:   data/CLENT_R1.fastq.gz
+mate 2:   data/CLENT_R2.fastq.gz
+Created thread # 6
+Created thread # 7
+Created thread # 8
+Created thread # 9
+Created thread # 10
+Created thread # 11
+Created thread # 12
+Created thread # 13
+Created thread # 14
+Created thread # 15
+Created thread # 16
+Created thread # 17
+Created thread # 18
+Created thread # 19
+Created thread # 20
+Created thread # 21
+Created thread # 22
+Created thread # 23
+Created thread # 24
+Created thread # 25
+Created thread # 26
+Created thread # 27
+Created thread # 28
+Created thread # 29
+Created thread # 30
+Created thread # 31
+Thread #21 end of input stream, nextChar=-1
+Completed: thread #11
+Completed: thread #27
+Completed: thread #10
+Completed: thread #1
+Completed: thread #17
+Completed: thread #29
+Completed: thread #6
+Completed: thread #15
+Completed: thread #14
+Completed: thread #30
+Completed: thread #19
+Completed: thread #22
+Completed: thread #31
+Completed: thread #8
+Completed: thread #24
+Completed: thread #26
+Completed: thread #12
+Completed: thread #3
+Completed: thread #28
+Completed: thread #9
+Completed: thread #7
+Completed: thread #16
+Completed: thread #25
+Completed: thread #2
+Completed: thread #23
+Completed: thread #21
+Completed: thread #0
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+Completed: thread #4
+Joined thread # 4
+Completed: thread #5
+Joined thread # 5
+Joined thread # 6
+Joined thread # 7
+Joined thread # 8
+Joined thread # 9
+Joined thread # 10
+Joined thread # 11
+Joined thread # 12
+Completed: thread #13
+Joined thread # 13
+Joined thread # 14
+Joined thread # 15
+Joined thread # 16
+Joined thread # 17
+Completed: thread #18
+Joined thread # 18
+Joined thread # 19
+Completed: thread #20
+Joined thread # 20
+Joined thread # 21
+Joined thread # 22
+Joined thread # 23
+Joined thread # 24
+Joined thread # 25
+Joined thread # 26
+Joined thread # 27
+Joined thread # 28
+Joined thread # 29
+Joined thread # 30
+Joined thread # 31
+Jan 20 16:01:09   Loaded database junctions from the 1st pass file: results/STAR/Caulerpa_lentillifera_v2._STARpass1//SJ.out.tab: 90756 total junctions
+
+Jan 20 16:01:09   Finished preparing junctions
+Jan 20 16:01:09 ..... inserting junctions into the genome indices
+Jan 20 16:01:14   Finished SA search: number of new junctions=90742, old junctions=0
+Jan 20 16:01:32   Finished sorting SA indicesL nInd=36188550
+Genome size with junctions=62279334  44040192   18239142
+GstrandBit1=32   GstrandBit=32
+Jan 20 16:01:34   Finished inserting junction indices
+Jan 20 16:02:13   Finished SAi
+Jan 20 16:02:13 ..... finished inserting junctions into genome
+
+   Input read files for mate 1 :
+-rwxrw-r-- 1 cassande stajichlab 7833872569 Apr 12  2021 data/CLENT_R1.fastq.gz
+
+   readsCommandsFile:
+exec > "results/STAR/Caulerpa_lentillifera_v2._STARtmp/tmp.fifo.read1"
+echo FILE 0
+zcat      "data/CLENT_R1.fastq.gz"
+
+
+   Input read files for mate 2 :
+-rwxrw-r-- 1 cassande stajichlab 7843522735 Apr 12  2021 data/CLENT_R2.fastq.gz
+
+   readsCommandsFile:
+exec > "results/STAR/Caulerpa_lentillifera_v2._STARtmp/tmp.fifo.read2"
+echo FILE 0
+zcat      "data/CLENT_R2.fastq.gz"
+
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread0 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread0 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread0 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread0 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread1 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread1 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread1 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread1 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread2 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread2 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread2 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread2 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread3 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread3 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread3 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread3 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread4 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread4 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread4 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread4 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread5 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread5 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread5 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread5 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread6 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread6 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread6 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread6 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread7 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread7 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread7 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread7 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread8 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread8 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread8 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread8 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread9 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread9 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread9 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread9 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread10 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread10 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread10 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread10 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread11 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread11 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread11 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread11 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread12 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread12 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread12 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread12 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread13 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread13 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread13 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread13 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread14 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread14 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread14 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread14 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread15 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread15 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread15 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread15 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread16 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread16 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread16 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread16 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread17 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread17 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread17 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread17 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread18 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread18 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread18 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread18 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread19 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread19 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread19 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread19 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread20 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread20 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread20 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread20 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread21 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread21 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread21 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread21 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread22 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread22 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread22 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread22 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread23 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread23 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread23 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread23 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread24 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread24 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread24 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread24 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread25 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread25 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread25 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread25 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread26 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread26 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread26 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread26 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread27 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread27 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread27 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread27 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread28 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread28 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread28 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread28 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread29 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread29 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread29 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread29 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread30 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread30 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread30 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread30 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate0.thread31 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//Unmapped.out.mate1.thread31 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate1.thread31 ... ok
+Opening the file: results/STAR/Caulerpa_lentillifera_v2._STARtmp//FilterBySJoutFiles.mate2.thread31 ... ok
+Created thread # 1
+Created thread # 2
+Created thread # 3
+Created thread # 4
+Starting to map file # 0
+mate 1:   data/CLENT_R1.fastq.gz
+mate 2:   data/CLENT_R2.fastq.gz
+Created thread # 5
+Created thread # 6
+Created thread # 7
+Created thread # 8
+Created thread # 9
+Created thread # 10
+Created thread # 11
+Created thread # 12
+Created thread # 13
+Created thread # 14
+Created thread # 15
+Created thread # 16
+Created thread # 17
+Created thread # 18
+Created thread # 19
+Created thread # 20
+Created thread # 21
+Created thread # 22
+Created thread # 23
+Created thread # 24
+Created thread # 25
+Created thread # 26
+Created thread # 27
+Created thread # 28
+Created thread # 29
+Created thread # 30
+Created thread # 31
+BAM sorting: 152919 mapped reads
+BAM sorting bins genomic start loci:
+1	0	674538
+2	0	1123577
+3	1	400277
+4	1	767721
+5	2	151658
+6	2	570848
+7	3	208579
+8	3	670409
+9	4	120489
+10	5	88219
+11	5	661989
+12	6	619465
+13	7	463931
+14	9	110111
+15	104	5688
+16	104	676226
+17	105	36385
+18	105	738378
+19	106	188268
+20	106	815259
+21	107	420631
+22	107	626482
+23	108	102601
+24	108	731562
+25	109	661031
+26	110	154202
+27	110	417482
+28	111	355763
+29	111	633463
+30	113	61457
+31	147	2305
+32	208	317916
+33	208	1095505
+34	209	614474
+35	209	1083859
+36	210	462126
+37	210	739951
+38	211	239300
+39	211	622398
+40	212	346377
+41	213	132700
+42	213	582907
+43	214	366378
+44	215	293251
+45	215	518100
+46	216	282393
+47	217	210024
+48	219	77030
+Thread #28 end of input stream, nextChar=-1
+Completed: thread #9
+Completed: thread #6
+Completed: thread #19
+Completed: thread #22
+Completed: thread #11
+Completed: thread #10
+Completed: thread #8
+Completed: thread #2
+Completed: thread #7
+Completed: thread #23
+Completed: thread #5
+Completed: thread #3
+Completed: thread #20
+Completed: thread #15
+Completed: thread #14
+Completed: thread #26
+Completed: thread #17
+Completed: thread #29
+Completed: thread #21
+Completed: thread #30
+Completed: thread #28
+Completed: thread #16
+Completed: thread #1
+Completed: thread #25
+Completed: thread #24
+Completed: thread #13
+Completed: thread #18
+Completed: thread #4
+Completed: thread #27
+Completed: thread #0
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+Joined thread # 4
+Joined thread # 5
+Joined thread # 6
+Joined thread # 7
+Joined thread # 8
+Joined thread # 9
+Joined thread # 10
+Joined thread # 11
+Completed: thread #31
+Completed: thread #12
+Joined thread # 12
+Joined thread # 13
+Joined thread # 14
+Joined thread # 15
+Joined thread # 16
+Joined thread # 17
+Joined thread # 18
+Joined thread # 19
+Joined thread # 20
+Joined thread # 21
+Joined thread # 22
+Joined thread # 23
+Joined thread # 24
+Joined thread # 25
+Joined thread # 26
+Joined thread # 27
+Joined thread # 28
+Joined thread # 29
+Joined thread # 30
+Joined thread # 31
+Completed stage 1 mapping of outFilterBySJout mapping
+Detected 531 novel junctions that passed filtering, will proceed to filter reads that contained unannotated junctions
+Created thread # 1
+Created thread # 2
+Created thread # 3
+Created thread # 4
+Created thread # 5
+Created thread # 6
+Created thread # 7
+Created thread # 8
+Created thread # 9
+Created thread # 10
+Created thread # 11
+Created thread # 12
+Created thread # 13
+Created thread # 14
+Created thread # 15
+Created thread # 16
+Created thread # 17
+Created thread # 18
+Created thread # 19
+Created thread # 20
+Created thread # 21
+Created thread # 22
+Created thread # 23
+Created thread # 24
+Created thread # 25
+Created thread # 26
+Created thread # 27
+Created thread # 28
+Created thread # 29
+Created thread # 30
+Created thread # 31
+Completed: thread #17
+Completed: thread #13
+Completed: thread #27
+Completed: thread #30
+Completed: thread #22
+Completed: thread #12
+Completed: thread #31
+Completed: thread #25
+Completed: thread #20
+Completed: thread #9
+Completed: thread #28
+Completed: thread #23
+Completed: thread #0
+Completed: thread #7
+Completed: thread #1
+Joined thread # 1
+Completed: thread #29
+Completed: thread #15
+Completed: thread #16
+Completed: thread #4
+Completed: thread #11
+Completed: thread #3
+Completed: thread #5
+Completed: thread #19
+Completed: thread #26
+Completed: thread #6
+Completed: thread #24
+Completed: thread #18
+Completed: thread #21
+Completed: thread #8
+Completed: thread #10
+Completed: thread #14
+Completed: thread #2
+Joined thread # 2
+Joined thread # 3
+Joined thread # 4
+Joined thread # 5
+Joined thread # 6
+Joined thread # 7
+Joined thread # 8
+Joined thread # 9
+Joined thread # 10
+Joined thread # 11
+Joined thread # 12
+Joined thread # 13
+Joined thread # 14
+Joined thread # 15
+Joined thread # 16
+Joined thread # 17
+Joined thread # 18
+Joined thread # 19
+Joined thread # 20
+Joined thread # 21
+Joined thread # 22
+Joined thread # 23
+Joined thread # 24
+Joined thread # 25
+Joined thread # 26
+Joined thread # 27
+Joined thread # 28
+Joined thread # 29
+Joined thread # 30
+Joined thread # 31
+Jan 20 16:26:46 ..... started sorting BAM
+Max memory needed for sorting = 803489445
+ALL DONE!
