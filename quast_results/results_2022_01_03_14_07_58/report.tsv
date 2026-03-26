@@ -1,0 +1,24 @@
+Assembly	Caulerpa_lentillifera_spades.ragtag.scaffolds.kept5000	Caulerpa_racemosa_spades.ragtag.scaffolds.kept5000	Caulerpa_lentillifera_OIST.dna
+# contigs (>= 0 bp)	313	473	423
+# contigs (>= 1000 bp)	313	473	155
+# contigs (>= 5000 bp)	313	473	84
+# contigs (>= 10000 bp)	90	215	65
+# contigs (>= 25000 bp)	42	72	53
+# contigs (>= 50000 bp)	36	43	44
+Total length (>= 0 bp)	27126735	28092297	28778443
+Total length (>= 1000 bp)	27126735	28092297	28710752
+Total length (>= 5000 bp)	27126735	28092297	28527016
+Total length (>= 10000 bp)	25673538	26354668	28406625
+Total length (>= 25000 bp)	24953371	24233571	28209863
+Total length (>= 50000 bp)	24728806	23302306	27882858
+# contigs	313	473	186
+Largest contig	1241889	1320764	1292516
+Total length	27126735	28092297	28732394
+GC (%)	39.90	42.19	40.37
+N50	842874	797408	947762
+N90	157350	15447	324841
+L50	14	14	14
+L90	33	128	30
+# N's per 100 kbp	1021.33	166.92	460.99
+Complete BUSCO (%)	0.00	0.00	0.00
+Partial BUSCO (%)	0.00	0.00	0.00

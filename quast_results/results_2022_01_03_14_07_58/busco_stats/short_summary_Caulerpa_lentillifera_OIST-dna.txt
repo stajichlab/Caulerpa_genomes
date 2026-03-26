@@ -1,0 +1,15 @@
+# BUSCO version is: 3.0.2 
+# The lineage dataset is: eukaryota_odb9 (Creation date: 2016-11-02, number of species: 100, number of BUSCOs: 303)
+# To reproduce this run: python /rhome/cassande/bigdata/software/quast-5.1.0rc1/quast.py -i /bigdata/stajichlab/shared/projects/Caulerpa/annotation/quast_results/results_2022_01_03_14_07_58/quast_corrected_input/Caulerpa_lentillifera_OIST_dna.fasta -o Caulerpa_lentillifera_OIST-dna -l /bigdata/stajichlab/cassande/software/quast-5.1.0rc1/quast_libs/busco/eukaryota/ -m genome -c 4 -t /bigdata/stajichlab/shared/projects/Caulerpa/annotation/quast_results/results_2022_01_03_14_07_58/busco_stats/tmp/ -sp fly --augustus_parameters ''''
+#
+# Summarized benchmarking in BUSCO notation for file /bigdata/stajichlab/shared/projects/Caulerpa/annotation/quast_results/results_2022_01_03_14_07_58/quast_corrected_input/Caulerpa_lentillifera_OIST_dna.fasta
+# BUSCO was run in mode: genome
+
+	C:0.0%[S:0.0%,D:0.0%],F:0.0%,M:100.0%,n:303
+
+	0	Complete BUSCOs (C)
+	0	Complete and single-copy BUSCOs (S)
+	0	Complete and duplicated BUSCOs (D)
+	0	Fragmented BUSCOs (F)
+	303	Missing BUSCOs (M)
+	303	Total BUSCO groups searched

@@ -1,0 +1,69 @@
+/rhome/cassande/bigdata/software/quast-5.1.0rc1/quast.py filtered_annotate/Caulerpa_lentillifera_spades.ragtag.scaffolds.kept5000.fa filtered_annotate/Caulerpa_racemosa_spades.ragtag.scaffolds.kept5000.fa /rhome/cassande/shared/projects/Caulerpa/gDNA/genomes/Caulerpa_lentillifera_OIST.dna.fasta --threads 12 --eukaryote --space-efficient --conserved-genes-finding
+
+Version: 5.1.0rc1
+
+System information:
+  OS: Linux-3.10.0-1160.15.2.el7.x86_64-x86_64-with-glibc2.17 (linux_64)
+  Python version: 3.9.4
+  CPUs number: 64
+
+Started: 2022-01-03 14:07:59
+
+Logging to /bigdata/stajichlab/shared/projects/Caulerpa/annotation/quast_results/results_2022_01_03_14_07_58/quast.log
+
+CWD: /bigdata/stajichlab/shared/projects/Caulerpa/annotation
+Main parameters: 
+  MODE: default, threads: 12, eukaryotic: true, min contig length: 500, min alignment length: 65, \
+  min alignment IDY: 95.0, ambiguity: one, threshold for extensive misassembly size: 1000
+
+WARNING: Can't draw plots: python-matplotlib is missing or corrupted.
+
+Contigs:
+  Pre-processing...
+  1  filtered_annotate/Caulerpa_lentillifera_spades.ragtag.scaffolds.kept5000.fa ==> Caulerpa_lentillifera_spades.ragtag.scaffolds.kept5000
+  2  filtered_annotate/Caulerpa_racemosa_spades.ragtag.scaffolds.kept5000.fa ==> Caulerpa_racemosa_spades.ragtag.scaffolds.kept5000
+  3  /rhome/cassande/shared/projects/Caulerpa/gDNA/genomes/Caulerpa_lentillifera_OIST.dna.fasta ==> Caulerpa_lentillifera_OIST.dna
+
+2022-01-03 14:08:03
+Running Basic statistics processor...
+  Contig files: 
+    1  Caulerpa_lentillifera_spades.ragtag.scaffolds.kept5000
+    2  Caulerpa_racemosa_spades.ragtag.scaffolds.kept5000
+    3  Caulerpa_lentillifera_OIST.dna
+  Calculating N50 and L50...
+    1  Caulerpa_lentillifera_spades.ragtag.scaffolds.kept5000, N50 = 842874, L50 = 14, Total length = 27126735, GC % = 39.90, # N's per 100 kbp =  1021.33
+    2  Caulerpa_racemosa_spades.ragtag.scaffolds.kept5000, N50 = 797408, L50 = 14, Total length = 28092297, GC % = 42.19, # N's per 100 kbp =  166.92
+    3  Caulerpa_lentillifera_OIST.dna, N50 = 947762, L50 = 14, Total length = 28732394, GC % = 40.37, # N's per 100 kbp =  460.99
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2022-01-03 14:08:07
+Running BUSCO...
+Logs and results will be saved under /bigdata/stajichlab/shared/projects/Caulerpa/annotation/quast_results/results_2022_01_03_14_07_58/busco_stats...
+WARNING: BUSCO did not fail explicitly but found nothing for all assemblies! Possible reasons and workarounds:
+  1. Provided assemblies are so small that they do not contain even a single partial BUSCO gene. Not likely but may happen -- nothing to worry then.
+  2. Incorrect lineage database was used. To run with fungi DB use --fungus, to run with eukaryota DB use --eukaryote, otherwise BUSCO uses bacteria DB.
+  3. Problem with BUSCO dependencies, most likely Augustus. Check that the binaries in /bigdata/stajichlab/cassande/software/quast-5.1.0rc1/quast_libs/augustus3.2.3/bin/ are working properly.
+     If something is wrong with Augustus, you may try to install it yourself (https://github.com/Gaius-Augustus/Augustus) and add "augustus" binary to PATH.
+  4. Some other problem with BUSCO. Check the logs (you may need to rerun QUAST with --debug to see all intermediate files).
+     If you cannot solve the problem yourself, post an issue at https://github.com/ablab/quast/issues or write to quast.support@cab.spbu.ru
+Done.
+
+2022-01-03 14:13:02
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+Done
+
+2022-01-03 14:13:02
+RESULTS:
+  Text versions of total report are saved to /bigdata/stajichlab/shared/projects/Caulerpa/annotation/quast_results/results_2022_01_03_14_07_58/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /bigdata/stajichlab/shared/projects/Caulerpa/annotation/quast_results/results_2022_01_03_14_07_58/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /bigdata/stajichlab/shared/projects/Caulerpa/annotation/quast_results/results_2022_01_03_14_07_58/report.html
+  Log is saved to /bigdata/stajichlab/shared/projects/Caulerpa/annotation/quast_results/results_2022_01_03_14_07_58/quast.log
+
+Finished: 2022-01-03 14:13:02
+Elapsed time: 0:05:03.507147
+NOTICEs: 1; WARNINGs: 2; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
