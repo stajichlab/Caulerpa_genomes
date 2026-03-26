@@ -1,0 +1,14 @@
+# BUSCO version is: 5.0.0 
+# The lineage dataset is: eukaryota_odb10 (Creation date: 2020-09-10, number of species: 70, number of BUSCOs: 255)
+# Summarized benchmarking in BUSCO notation for file genomes/OIST/Caulerpa_lentillifera_OIST_genemodels_v1.1.fa
+# BUSCO was run in mode: proteins
+
+	***** Results: *****
+
+	C:69.8%[S:67.8%,D:2.0%],F:6.7%,M:23.5%,n:255	   
+	178	Complete BUSCOs (C)			   
+	173	Complete and single-copy BUSCOs (S)	   
+	5	Complete and duplicated BUSCOs (D)	   
+	17	Fragmented BUSCOs (F)			   
+	60	Missing BUSCOs (M)			   
+	255	Total BUSCO groups searched		   

@@ -1,0 +1,14 @@
+# BUSCO version is: 5.0.0 
+# The lineage dataset is: eukaryota_odb10 (Creation date: 2020-09-10, number of species: 70, number of BUSCOs: 255)
+# Summarized benchmarking in BUSCO notation for file annotate/Caulerpa_racemosa.spades.ragtag/annotate_results/Caulerpa_racemosa_spades.ragtag.proteins.fa
+# BUSCO was run in mode: proteins
+
+	***** Results: *****
+
+	C:83.9%[S:75.3%,D:8.6%],F:5.5%,M:10.6%,n:255	   
+	214	Complete BUSCOs (C)			   
+	192	Complete and single-copy BUSCOs (S)	   
+	22	Complete and duplicated BUSCOs (D)	   
+	14	Fragmented BUSCOs (F)			   
+	27	Missing BUSCOs (M)			   
+	255	Total BUSCO groups searched		   

@@ -1,0 +1,14 @@
+# BUSCO version is: 5.0.0 
+# The lineage dataset is: chlorophyta_odb10 (Creation date: 2020-08-05, number of species: 16, number of BUSCOs: 1519)
+# Summarized benchmarking in BUSCO notation for file filtered_annotate/v3/Caulerpa_lentillifera.prot.fa
+# BUSCO was run in mode: proteins
+
+	***** Results: *****
+
+	C:86.5%[S:73.1%,D:13.4%],F:1.1%,M:12.4%,n:1519	   
+	1314	Complete BUSCOs (C)			   
+	1111	Complete and single-copy BUSCOs (S)	   
+	203	Complete and duplicated BUSCOs (D)	   
+	16	Fragmented BUSCOs (F)			   
+	189	Missing BUSCOs (M)			   
+	1519	Total BUSCO groups searched		   

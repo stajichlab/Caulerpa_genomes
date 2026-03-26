@@ -1,0 +1,15 @@
+# BUSCO version is: 5.0.0 
+# The lineage dataset is: chlorophyta_odb10 (Creation date: 2020-08-05, number of species: 16, number of BUSCOs: 1519)
+# Summarized benchmarking in BUSCO notation for file filtered_annotate/Caulerpa_lentillifera_spades.ragtag.scaffolds.kept5000.fa
+# BUSCO was run in mode: genome
+# Gene predictor used: metaeuk
+
+	***** Results: *****
+
+	C:82.2%[S:73.8%,D:8.4%],F:2.7%,M:15.1%,n:1519	   
+	1248	Complete BUSCOs (C)			   
+	1121	Complete and single-copy BUSCOs (S)	   
+	127	Complete and duplicated BUSCOs (D)	   
+	41	Fragmented BUSCOs (F)			   
+	230	Missing BUSCOs (M)			   
+	1519	Total BUSCO groups searched		   

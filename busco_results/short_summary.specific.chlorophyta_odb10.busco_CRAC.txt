@@ -1,0 +1,15 @@
+# BUSCO version is: 5.0.0 
+# The lineage dataset is: chlorophyta_odb10 (Creation date: 2020-08-05, number of species: 16, number of BUSCOs: 1519)
+# Summarized benchmarking in BUSCO notation for file genomes/masked/Caulerpa_racemosa.spades.ragtag.masked.fasta
+# BUSCO was run in mode: genome
+# Gene predictor used: metaeuk
+
+	***** Results: *****
+
+	C:83.9%[S:72.9%,D:11.0%],F:2.4%,M:13.7%,n:1519	   
+	1274	Complete BUSCOs (C)			   
+	1107	Complete and single-copy BUSCOs (S)	   
+	167	Complete and duplicated BUSCOs (D)	   
+	36	Fragmented BUSCOs (F)			   
+	209	Missing BUSCOs (M)			   
+	1519	Total BUSCO groups searched		   
