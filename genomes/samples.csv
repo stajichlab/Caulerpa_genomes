@@ -1,3 +1,3 @@
 SPECIES,INFO,BIOPROJECT,BIOSAMPLE,SRA,LOCUS
-Caulerpa lentillifera,spades.ragtag,,,,CLENT
-Caulerpa racemosa,spades.ragtag,,,,CRAC
+Caulerpa lentillifera,Clent_Sentosa_2020,PRJNA1380034,SAMN54099722,SRR36477246,ACZ3H1
+Caulerpa racemosa,Crac_Sentosa_2020,PRJNA1380034,SAMN54099723,SRR36477245,ACZ3H0
