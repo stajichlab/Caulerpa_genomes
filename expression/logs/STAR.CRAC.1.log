@@ -1,0 +1,71 @@
+	STAR --outSAMtype BAM SortedByCoordinate --outReadsUnmapped Fastx --quantMode GeneCounts --twopassMode Basic --runThreadN 32 --outFilterType BySJout --outFilterMultimapNmax 20 --alignSJoverhangMin 8 --alignSJDBoverhangMin 1 --outFilterMismatchNmax 999 --outFilterMismatchNoverReadLmax 0.08 --alignIntronMin 20 --alignIntronMax 10000 --alignMatesGapMax 10000 --genomeDir data/STAR --outFileNamePrefix results/STAR/Caulerpa_racemosa_v2. --readFilesIn data/CRAC_R1.fastq.gz data/CRAC_R2.fastq.gz --readFilesCommand zcat
+	STAR version: 2.7.9a   compiled: 2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+Jan 20 16:13:17 ..... started STAR run
+Jan 20 16:13:17 ..... loading genome
+Jan 20 16:13:19 ..... started 1st pass mapping
+Jan 20 17:34:45 ..... finished 1st pass mapping
+Jan 20 17:34:45 ..... inserting junctions into the genome indices
+Jan 20 17:35:04 ..... started mapping
+Jan 20 18:59:21 ..... finished mapping
+Jan 20 18:59:21 ..... started sorting BAM
+Jan 20 18:59:38 ..... finished successfully
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.2
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 1 BAM file                                       ||
+||                                                                            ||
+||                           Caulerpa_racemosa_v2.Aligned.sortedByCoord.o ... ||
+||                                                                            ||
+||             Output file : Caulerpa_racemosa_v2.featureCounts.tsv           ||
+||                 Summary : Caulerpa_racemosa_v2.featureCounts.tsv.summary   ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : no                                               ||
+||              Annotation : Caulerpa_racemosa_v2.gtf (GTF)                   ||
+||      Dir for temp files : results/STAR                                     ||
+||       Junction Counting : <output_file>.jcounts                            ||
+||                                                                            ||
+||                 Threads : 16                                               ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file Caulerpa_racemosa_v2.gtf ...                          ||
+||    Features : 60454                                                        ||
+||    Meta-features : 14147                                                   ||
+||    Chromosomes/contigs : 460                                               ||
+||                                                                            ||
+|| Load FASTA contigs from Caulerpa_racemosa_v2.scaffolds.fa...               ||
+||    472 contigs were loaded                                                 ||
+||                                                                            ||
+|| Process BAM file Caulerpa_racemosa_v2.Aligned.sortedByCoord.out.bam...     ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 5595874                                              ||
+||    Successfully assigned alignments : 4606103 (82.3%)                      ||
+||    Running time : 0.03 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the junction count table.                                            ||
+||    WARNING contig 'scaffold_4' is not found in the                         ||
+||    provided genome file.                                                   ||
+||                                                                            ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "results/STAR/Caulerpa_r  ||
+|| acemosa_v2.featureCounts.tsv.summary"                                      ||
+||                                                                            ||
+\\============================================================================//
+
